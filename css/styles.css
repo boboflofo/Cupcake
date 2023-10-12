@@ -1,0 +1,17 @@
+.flashy {
+  color:red;
+  font-style:italic;
+  background-color: aqua;
+}
+
+img {
+  width: 300px;
+}
+
+#best{
+  background-color: green;
+}
+
+h1 {
+  text-align: center;
+}
