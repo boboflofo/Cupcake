@@ -31,21 +31,32 @@ let h1 = document.querySelector("h1");
 }
 
     h1.onmouseout = function() {
-    h1.style.backgroundColor = "white";
+    h1.style.backgroundColor = randomBackgroundColor;
+    }
+
+let body = document.body;
+        body.onmouseover = function() {
+            body.style.backgroundColor = randomBackgroundColor;
+        }
+
+    body.onmouseout = function() {
+        body.style.backgroundColor = randomBackgroundColor2;
+    }
+
+const randomBackgroundColor = getRandomColor();
+const randomBackgroundColor2 = getRandomColor();
+
+function getRandomInt(min, max) {
+    // min and max are inclusive
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomColor() {
+    const red = getRandomInt(0, 255);
+    const green = getRandomInt(0, 255);
+    const blue = getRandomInt(0, 255);
+    return `rgb(${red},${green},${blue})`;
 }
 }
-
-
-    // let h1MouseOut = document.querySelector("h1");
-    //     h1.onmouseout = function() {
-    //     h1.style. backgroundColor = "white";
-    //     }
-
-//     let h1 = document.querySelector("h1");
-//         h1.onmouseover = function() {
-//         window.alert("I am a heading element.");
-// };
-
-// document.querySelector(".light-mode").onclick = light()
-
-// button.className = "light-mode" 
