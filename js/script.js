@@ -22,23 +22,30 @@ let decrease = document.querySelector(".decrease");
     decrease.onclick = function() {
     document.body.style.fontSize = "15px";
 }
+
+
+let h1 = document.querySelector("h1");
+    h1.onmouseover = function() {
+    h1.style.backgroundColor = "yellow";
+    
 }
 
-    let h1MouseOn = document.querySelector("h1");
-        h1.mouseover = function() {
-        document.querySelector("h1").backgroundColor = "yellow";
-    }
+    h1.onmouseout = function() {
+    h1.style.backgroundColor = "white";
+}
+}
+
 
     // let h1MouseOut = document.querySelector("h1");
     //     h1.onmouseout = function() {
     //     h1.style. backgroundColor = "white";
     //     }
 
-    let h1 = document.querySelector("h1");
-        h1.onmouseover = function() {
-        window.alert("I am a heading element.");
-};
+//     let h1 = document.querySelector("h1");
+//         h1.onmouseover = function() {
+//         window.alert("I am a heading element.");
+// };
 
 // document.querySelector(".light-mode").onclick = light()
 
-button.className = "light-mode" 
+// button.className = "light-mode" 
